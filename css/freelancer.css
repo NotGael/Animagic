@@ -449,7 +449,7 @@ footer {
 .btn:focus {
   outline: none; }
 
-
 .rounded {
   border-radius: 50%;
+  background-color: red;
 }
