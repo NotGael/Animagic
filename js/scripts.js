@@ -10,7 +10,7 @@ $.ajax({
                                "<td>" + element.nom + "</td>" +
                                "<td>" + element.description + "</td>" +
                                "<td>" + element.cout + "</td>" +
-                               "<td>" + element.url + "</td>" +
+                               "<td><img src=\"" + element.url + "\" alt=\"Une image d'animal\"></td>" +
                                "<td>" + element.dateNaissance + "</td>" +
                                "</tr>";
             $('#table').append(txt);
