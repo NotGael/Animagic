@@ -448,3 +448,8 @@ footer {
 .btn:active,
 .btn:focus {
   outline: none; }
+
+
+.rounded {
+  border-radius: 50%;
+}
