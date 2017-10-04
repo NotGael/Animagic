@@ -13,7 +13,7 @@ $.ajax({
                                "<td><img src=\"" + element.url + "\" alt=\"Une image d'animal\" style=\"max-width:100px; min-width:100px\"></td>" +
                                "<td>" + element.dateNaissance + "</td>" +
                                "</tr>";
-            $('#animalTable').append(txt);
+            $('#animalTable1').append(txt);
         });
     }
 });
@@ -33,7 +33,7 @@ $.ajax({
                                "<td><img src=\"" + element.url + "\" alt=\"Une image d'animal\" style=\"max-width:100px; min-width:100px\"></td>" +
                                "<td>" + element.dateNaissance + "</td>" +
                                "</tr>";
-            $('#animalTableBis').append(txt);
+            $('#animalTable2').append(txt);
         });
     }
 });
