@@ -13,7 +13,7 @@ $.ajax({
                                "<td><img src=\"" + element.url + "\" alt=\"Une image d'animal\"></td>" +
                                "<td>" + element.dateNaissance + "</td>" +
                                "</tr>";
-            $('#table').append(txt);
+            $('#animalTable').append(txt);
         });
     }
 });
