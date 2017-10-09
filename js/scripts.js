@@ -69,7 +69,7 @@ $("#sendMessageButton").click(function() {
             description: $("#contactForm input[name=description]").val(),
             cout: $("#contactForm input[name=cout]").val(),
             url: $("#contactForm input[name=url]").val(),
-            dateNaissace: $("#contactForm input[name=date]").val(),
+            dateNaissance: $("#contactForm input[name=date]").val(),
         }),
         contentType: "application/json; charset=utf-8",
         dataType: "json",
