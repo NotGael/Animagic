@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Animagic</title>
+    <title>Animagic - IP 118</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,9 +35,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <!--<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>-->
           </ul>
         </div>
       </div>
@@ -55,121 +52,101 @@
       </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="tableNumber1">
+    <!-- INDEX -->
+    <section id="index">
       <div class="container">
         <h2 class="text-center">En location</h2>
         <hr class="star-primary">
         <div class="row">
-          <table id="animalTable1">
-            <th>id</th>
-            <th>type</th>
-            <th>nom</th>
-            <th>description</th>
-            <th>cout</th>
-            <th>url</th>
-            <th>dateNaissance</th>
+          <table id="animals">
+            <th>ID</th>
+            <th>Type</th>
+            <th>Nom</th>
+            <th>Description</th>
+            <th>Cout</th>
+            <th>Image</th>
+            <th>Date de Naissance</th>
+            <th>Supprimer</th>
           </table>
-          <!--<div class="col-sm-4 portfolio-item">
-
-          </div>-->
       </div>
     </section>
 
-    <section id="tableNumber2" class="success">
+    <!-- CREATE -->
+    <section id="create" class="success">
       <div class="container">
-        <h2 class="text-center">En location</h2>
+        <h2 class="text-center">Ajouter un animal</h2>
         <hr class="star-light">
         <div class="row">
-          <table id="animalTable2">
-            <th>id</th>
-            <th>type</th>
-            <th>nom</th>
-            <th>description</th>
-            <th>cout</th>
-            <th>url</th>
-            <th>dateNaissance</th>
-          </table>
-          <!--<div class="col-sm-4 portfolio-item">
-
-          </div>-->
+        <div name="sentMessage" id="createForm" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Type</label>
+              <input class="form-control" id="type" name="type" type="text" placeholder="Type" required data-validation-required-message="Merci d'entrer le type.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Name</label>
+              <input class="form-control" id="name" name="name" type="text" placeholder="Name" required data-validation-required-message="Merci d'entrer le name.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Description</label>
+              <input class="form-control" id="description" name="description" type="text" placeholder="Description" required data-validation-required-message="Merci d'entrer la description.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Cout</label>
+              <input class="form-control" id="cout" name="cout" type="number" placeholder="Cout" required data-validation-required-message="Merci d'entrer le cout.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>URL</label>
+              <input class="form-control" id="url" name="url" type="text" placeholder="http://..." required data-validation-required-message="Merci d'entrer l'URL.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Date de Naissance</label>
+              <input class="form-control" id="date" name="date" type="date" placeholder="1990-12-06" required data-validation-required-message="Merci d'entrer la date de naissance.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-success btn-lg" id="sendCreate">Ajouter</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="tableNumber3">
-      <div class="container">
-        <h2 class="text-center">En location</h2>
-        <hr class="star-primary">
-        <div class="row">
-          <table id="animalTable3">
-            <th>id</th>
-            <th>type</th>
-            <th>nom</th>
-            <th>description</th>
-            <th>cout</th>
-            <th>url</th>
-            <th>dateNaissance</th>
-          </table>
-          <!--<div class="col-sm-4 portfolio-item">
-
-          </div>-->
-      </div>
-    </section>
-
+    <!-- DELETE -->
     <section id="create">
       <div class="container">
-        <h2 class="text-center">Ajouter un animal IP 118</h2>
+        <h2 class="text-center">Supprimer un animal</h2>
         <hr class="star-primary">
         <div class="row">
-        <div name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Type</label>
-                  <input class="form-control" id="type" name="type" type="text" placeholder="Type" required data-validation-required-message="Merci d'entrer le type.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Name</label>
-                  <input class="form-control" id="name" name="name" type="text" placeholder="Name" required data-validation-required-message="Merci d'entrer le name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Description</label>
-                  <input class="form-control" id="description" name="description" type="text" placeholder="Description" required data-validation-required-message="Merci d'entrer la description.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Cout</label>
-                  <input class="form-control" id="cout" name="cout" type="number" placeholder="Cout" required data-validation-required-message="Merci d'entrer le cout.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>URL</label>
-                  <input class="form-control" id="url" name="url" type="text" placeholder="http://..." required data-validation-required-message="Merci d'entrer l'URL.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Date de Naissance</label>
-                  <input class="form-control" id="date" name="date" type="date" placeholder="06/12/1990" required data-validation-required-message="Merci d'entrer la date de naissance.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="form-group">
-                <button class="btn btn-success btn-lg" id="sendMessageButton">Ajouter</button>
-              </div>
+        <div name="sentMessage" id="deleteForm" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>ID</label>
+              <input class="form-control" id="id" name="id" type="number" placeholder="id" required data-validation-required-message="Merci d'entrer le cout.">
+              <p class="help-block text-danger"></p>
             </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-success btn-lg" id="sendDelete">Supprimer</button>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!-- About Section -->
     <section class="success" id="about">
