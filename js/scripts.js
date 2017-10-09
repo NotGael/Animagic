@@ -58,23 +58,24 @@ $.ajax({
     }
 });
 
-$.ajax({
-    type: "POST",
-    url: 'http://10.10.9.118:8080/animals',
-    // The key needs to match your method's input parameter (case-sensitive).
-    data: JSON.stringify({
-        type: $("#contactForm input[name=type]").val(),
-        nom: $("#contactForm input[name=nom]").val(),
-        description: $("#contactForm input[name=description]").val(),
-        cout: $("#contactForm input[name=cout]").val(),
-        url: $("#contactForm input[name=url]").val(),
-        dateNaissance: $("#contactForm input[name=dateNaissance]").val()
-    }),
-    contentType: "application/json; charset=utf-8",
-    dataType: "json",
-    success: function(data){alert(data);},
-    failure: function(errMsg) {
-        alert(errMsg);
-    }
-    return false;
+$("#sendMessageButton").click(function() {
+    $.ajax({
+        type: "POST",
+        url: 'http://10.10.9.118:8080/animals',
+        // The key needs to match your method's input parameter (case-sensitive).
+        data: JSON.stringify({
+            type: $("#contactForm input[name=type]").val(),
+            nom: $("#contactForm input[name=name]").val(),
+            description: $("#contactForm input[name=description]").val(),
+            cout: $("#contactForm input[name=cout]").val(),
+            url: $("#contactForm input[name=url]").val(),
+            dateNaissace: $("#contactForm input[name=date]").val(),
+        }),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function(data){alert(data);},
+        failure: function(errMsg) {
+            alert(errMsg);
+        }
+    });
 });
